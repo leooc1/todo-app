@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-// import Image from 'next/image'
 import { setCookie, parseCookies } from 'nookies'
 
 export default function TopImage() {
@@ -8,12 +7,11 @@ export default function TopImage() {
         const cookies = parseCookies()
         let theme = cookies.theme || 'light'
         setTheme(theme)
-        setTheme(theme)
     }, [theme])
     
     return (
         <section className={`${theme == 'dark' ? 'sm:bg-dark-image bg-dark-image-mobile' : 'sm:bg-light-image bg-light-image-mobile'} bg-center bg-cover flex items-center`}>
-            <div className='flex w-full justify-evenly items-center'>
+            <div className='flex w-full justify-evenly items-center pb-10'>
                 <h1 className='font-bold text-white text-4xl'>T O D O</h1>
                 <button className='h-fit w-fit' onClick={() => {
                     if (theme == 'dark') {

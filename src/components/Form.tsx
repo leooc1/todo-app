@@ -1,7 +1,7 @@
-import React from 'react'
 import { parseCookies, setCookie } from 'nookies'
 
-export default function Form() {
+export default function Form({theme}:{theme:string}) {
+
     return (
         <form action="/" method='POST' onSubmit={(e) => {
             e.preventDefault()
@@ -24,9 +24,9 @@ export default function Form() {
 
         }}>
             <input placeholder='Create a new todo...' type="text" name='todo'
-                className='focus:border-0 focus:outline-none shadow-2xl shadow-[#000000]
-            mb-5 w-full bg-[var(--bg-main)] px-5 py-2 text-[var(--text-main)] rounded-md
-            placeholder:text-[var(--text-secondary)]'/>
+                className={`focus:border-0 focus:outline-none shadow-2xl
+            mb-5 w-full 
+            ${theme == 'dark' ? 'bg-[var(--dark-bg-main)] text-[var(--dark-text-main)] placeholder:text-[var(--dark-text-secondary)] shadow-[#000000]' : 'bg-[var(--light-bg-main)] text-[var(--light-text-hover)] placeholder:text-[var(--light-text-secondary)] shadow-[#00000069]'} px-5 py-2 rounded-md`} />
             <input type="hidden" name="concluded" value={0} />
         </form>
     )
