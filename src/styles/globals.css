@@ -19,12 +19,12 @@
 }
 
 .scroll-list::-webkit-scrollbar{
-  border-radius:10px;
-  width: 5px;
+  /* border-radius:10px; */
+  width: 0px;
 }
 
-.scroll-list::-webkit-scrollbar-thumb{
+/* .scroll-list::-webkit-scrollbar-thumb{
   border-radius:10px;
   width: 5px;
-  background-color: #bf58f3dc;
-}
+  background-color: #bf58f35d;
+} */
