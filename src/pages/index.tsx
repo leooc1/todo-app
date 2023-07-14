@@ -38,7 +38,7 @@ export default function Home() {
       <meta name="description" content="Todo App" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className={`min-h-screen grid ${font.className} overflow-hidden`} style={{ gridTemplateRows: '250px 1fr' }}>
+    <main className={`max-h-screen grid ${font.className} overflow-hidden`} style={{ gridTemplateRows: '250px 1fr' }}>
       <TopImage />
       <section className={`${theme == 'dark' ? 'bg-[var(--dark-bg-color)]' : 'bg-[var(--light-bg-color)]'}`}>
         <Main theme={theme}>

@@ -26,5 +26,5 @@
 .scroll-list::-webkit-scrollbar-thumb{
   border-radius:10px;
   width: 5px;
-  /* background-color: #bf58f35d; */
+  background-color: #bf58f3dc;
 }
