@@ -11,7 +11,7 @@ export default function ListItem(props: ListItemProps) {
 
     return (
         <>
-            <li className={`px-5 py-2 border-b-[1px] ${props.theme == 'dark' ? 'border-[var(--dark-text-concluded)] bg-[var(--dark-bg-main)]' : 'border-[var(--light-text-concluded)] bg-[var(--light-bg-main)]'} rounded-t-md ${props.theme == 'dark' ? `${props.completed ? 'text-[var(--dark-text-secondary)] line-through' : 'text-[var(--dark-text-hover)]'}` : `${props.completed ? 'text-[var(--light-text-secondary)] line-through' : 'text-[var(--light-text-hover)]'}`} flex items-center text-ellipsis h-12`}>
+            <li className={`px-5 py-2 border-b-[1px] ${props.theme == 'dark' ? 'border-[var(--dark-text-concluded)] bg-[var(--dark-bg-main)]' : 'border-[var(--light-text-concluded)] bg-[var(--light-bg-main)]'} rounded-t-md ${props.theme == 'dark' ? `${props.completed ? 'text-[var(--dark-text-secondary)] line-through' : 'text-[var(--dark-text-hover)]'}` : `${props.completed ? 'text-[var(--light-text-secondary)] line-through' : 'text-[var(--dark-bg-main)]'}`} flex items-center text-ellipsis h-12`}>
                 <button onClick={() => {
                     const cookies = parseCookies()
                     let tasks = JSON.parse(cookies.tasks || '[]')
