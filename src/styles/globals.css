@@ -18,12 +18,21 @@
   --light-text-concluded: #d2d3db;
 }
 
-.scroll-list::-webkit-scrollbar{
+*::-webkit-scrollbar{
   /* border-radius:10px; */
   width: 0px;
 }
 
-/* .scroll-list::-webkit-scrollbar-thumb{
+/* .scroll-list::-webkit-scrollbar{
+  width: 0px;
+} */
+
+/* ::-webkit-scrollbar{
+  background-color: transparent;
+  width: 0px;
+} */
+
+/* ::-webkit-scrollbar-thumb{
   border-radius:10px;
   width: 5px;
   background-color: #bf58f35d;
